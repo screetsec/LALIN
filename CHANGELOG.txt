@@ -1,0 +1,41 @@
+####################################################################################################################################################################
+#							
+#							LALIN TOOLKIT
+#					         LAZY LINUX TOOLKIT UPTODATE :> 
+#Description:
+#This script automatically install any package for pentest with uptodate tools , and lazy command for run the tools like lazynmap , install another and update to new
+#
+#Homepage:
+#https://github.com/screetsec/LaLin
+#
+#Author:
+#
+#Edo -m- ( screetsec@gmail.com )
+#####################################################################################################################################################################
+
+# Interaction with ASCII FONT And Full Colour 
+# Update Kali Features : Add my repo , Update Sources list 2016 , Update Kali , Update and Clean Kali  
+# Virtual Machine Features : Install Virtualbox , (new) Install Vmware , Install Qemu , Install VKM
+# Browsers Features : Intall Google Chrome , Install Chromium , Install Firefox , ( new ) Install Min , Install TOR 
+# WiFu Features : Linset , (new) Wps-breaker , WifiPhiser , (new) Fluxion , WifiHack , Wifite ,wpa-autopwn
+# Exploit-db Features : Update Exploitdb , Searchsploit 
+# Sniffing&MITM : (new)Bettercap , Mitmf , Weeman , Yamas , EasyCreds , Pwnstar ,Suterfuge,Ghost-Phiser,Hamster&Ferret  
+# Backdoor : Shellter , Veil ,Unicorn ,Avoid ,Gcat , Maligno , mpc
+# Start Service : Metasploit ,Openvas , apache , network
+#####################################################################################################################################################################
+
+# ADD NEW 
+#
+# Add Firefox Security Toolkit 
+# Add new tools in Sniffing&MITM : Bettercap , Mitmf , Weeman 
+# Add Firefox Security toolkit
+# Add Hackpack
+# Add HID attack Payload : Ducky payload , Teensy payload 
+# Add Backdor new : Shellter , Unicorn , MPC
+# Add LazyNmap
+# Add Exploit development : Shellsploit , routersploit , Windows exploit sugester , Linux exploit suggester
+# Add fixing all problem
+# Update credits
+#####################################################################################################################################################################
+
+
