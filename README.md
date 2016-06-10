@@ -22,10 +22,8 @@ Please do not forget to report bugs! You can submit an issue, pull request, or e
 ## :octocat: Screenshots ###
 How to start a script?
 ```
-$ chmod +x Lalin.sh
+$ sudo chmod +x Lalin.sh
 ```
-
-How to start a script?
 ```
 $ sudo ./Lalin.sh
 ```
