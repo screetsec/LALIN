@@ -18,6 +18,7 @@ Be sure to check out the [Changelog] and Read CHANGELOG.txt
 ##  :heavy_exclamation_mark: Requirements
 
 A linux operating system. We recommend Kali Linux 2 or Kali 2016.1 rolling. 
+file:///root/Pictures/Screenshot%20from%202016-06-10%2021-39-41.png
 
 ## :octocat: Usefull Help / Noobfriendly ###
 
