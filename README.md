@@ -35,17 +35,6 @@ How to clone the git
 ```
 $ sudo git clone ...
 ```
-Syntax error line blala
-
-Open up LaLin with a editor e.g. gedit
-```
-$ sudo gedit Lalin.sh
-```
-And add this line:
-```
-#!/bin/bash
-```
-Without spaces, at the top 
 
 
 ## :octocat: Credits
