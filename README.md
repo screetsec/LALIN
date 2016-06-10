@@ -31,8 +31,13 @@ $ sudo ./Lalin.sh
 ## :octocat: Credits
 1. Miffly @Edo -m-  main developer of Lalin   
 2. Bradfrea @Lazykali main developer of Lazykali 
-4. And another open sources tool in github 
-5. Uptodate new tools hacking visit http://www.kitploit.com
+3. Daniel for lazynmap www.commonexploits.com
+3. Uptodate new tools hacking visit http://www.kitploit.com
+4. https://github.com/mazen160/Firefox-Security-Toolkit
+4. http://www.linuxsec.com/
+4. Offensive Secuirty for the awesome os
+5. http://www.kali.org
+6. http://www.offensive-security.com
 
 ## Disclaimer
 
