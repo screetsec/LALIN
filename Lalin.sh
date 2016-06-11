@@ -110,7 +110,7 @@ case $lalinselc in
 	"Restore Repository")
 		clear
 		rm /etc/apt/sources.list
-		mv /etc/apt/sources.list.backup /etc/apt/sources.2
+		mv /etc/apt/sources.list.backup /etc/apt/sources.list
 		echo -e $red " Done Restore repository "
 		pause
 		clear ;;	
