@@ -36,6 +36,7 @@
 # Add Exploit development : Shellsploit , routersploit , Windows exploit sugester , Linux exploit suggester
 # Add fixing all problem
 # Update credits
+# Update kali add : restore repo . backup repo
 #####################################################################################################################################################################
 
 
