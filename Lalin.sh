@@ -2486,7 +2486,7 @@ echo -e $yellow "http://www.kali.org/"
 echo
 echo -e $cyan "http://www.kitploit.com/"
 echo
-echo -e $white "http://www.linuxsec.com/"
+echo -e $white "http://www.linuxsec.org/ ( Jack Wilder )"
 echo 
 echo -e $yellow "Daniel for lazynmap www.commonexploits.com "
 echo
