@@ -6,7 +6,7 @@
 
 		    # + ---=> [ Welcome and dont disclaimer #
 
-	       # + ---=> [ LALIN Author By Edooo -m- #
+	       # + ---=> [ LALIN Author By Edooo -maland- #
 
 	# + ---=> [ Tested On Kali Linux and Kali sana v.2 #
 
