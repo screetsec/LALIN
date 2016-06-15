@@ -2699,7 +2699,7 @@ break
 
 done
 }
+
+[[ $EUID != 0 ]] && echo "This script must be run as root!" && exit 1
+
 while true; do lalin; done
-
-
-
