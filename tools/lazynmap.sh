@@ -5,7 +5,7 @@
 # contact@commexploits.com
 # Twitter = @commonexploits
 # Updated 04/05/2016
-# Tested on Kali2 Nessus version 4 & 5
+# Tested on Kali2 Nessus version 4 & 5 and rolling
 
 # Important info - read first!
 
