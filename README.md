@@ -34,7 +34,7 @@ $ sudo ./Lalin.sh
 
 
 ## :octocat: Credits
-1. Miffly @Edo -m-  main developer of Lalin   
+1. Miffly @Edo -maland-  main developer of Lalin   
 2. Bradfrea @Lazykali main developer of Lazykali 
 3. Daniel for lazynmap www.commonexploits.com
 3. Uptodate new tools hacking visit http://www.kitploit.com
@@ -46,4 +46,4 @@ $ sudo ./Lalin.sh
 
 ## Disclaimer
 
-***Note: modifications, changes, or alterations to this sourcecode is acceptable, however,any public releases utilizing this code must be approved by writen this tool ( Edo -m- ).***
+***Note: modifications, changes, or alterations to this sourcecode is acceptable, however,any public releases utilizing this code must be approved by writen this tool ( Edo -maland- ).***
