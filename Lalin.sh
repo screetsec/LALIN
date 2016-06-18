@@ -2662,7 +2662,7 @@ echo -e $white"             % $cyan           LAZY "$red"LINUX$cyan TOOLKIT $red
 echo -e $white"             % $cyan  Tested On $red Kali sana v.2 $cyan and "$red"rolling$white   %"
 echo -e $white"             % $cyan  Contact me in screetsec[at]@gmail.com$white   %"
 echo -e $white"             % $cyan    Powered by "$red"Miffly"$cyan" [ Edo -maland-] $white    %"
-echo -e $white"             % $cyan  	 Changelog: $red 15-06-2016   	$white %"
+echo -e $white"             % $cyan  	 Changelog: $red 18-06-2016   	$white %"
 echo -e $white"             %                                           %"
 echo -e $white"             ============================================="
 echo
