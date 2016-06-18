@@ -39,6 +39,8 @@
 # Update kali add : restore repo . backup repo
 # ADD new TOol in Exploit Dev : Litesploit , uSPLOIT
 # ADD DECRYPTER & ENCRYPTER
+# Update Lalin To 1.6 
+# ADD Lazy Macchanger ( easy to use )
 #####################################################################################################################################################################
 
 
