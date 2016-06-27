@@ -4,7 +4,7 @@ Lalin is a remake of Lazykali by bradfreda with fixed bugs , added  new features
 
 ## :scroll: Changelog
 Lalin gets updated weekly with new features, improvements and bugfixes. 
-Be sure to check out the [Changelog] now Updated Lalin v1.6 ( 19-06-2016 )
+Be sure to check out the [Changelog] now Updated Lalin v1.7 ( 27-06-2016 )
 
 
 ## :book: How it works
