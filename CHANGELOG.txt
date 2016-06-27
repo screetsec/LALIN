@@ -42,6 +42,8 @@
 # Update Lalin To 1.6 
 # ADD Lazy Macchanger ( easy to use )
 # Add zenity in Lalin ( exit )
+# ADD MENU WEB SECURITY : "XSSPY" "XSSYA" "DOORK" "VBSCAN" "ATSCAN" "VENOM-SCANNER" "Sn1per" "Droopescan" "Nikto" "Lisa" "CMSmap" "Bingoo"
+# LALIN NEW VERSION 1.7
 #####################################################################################################################################################################
 
 
