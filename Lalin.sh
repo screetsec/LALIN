@@ -1511,6 +1511,28 @@ function impc {
 			fi
 }
 
+
+################################################################### 
+#Install fatrat
+######################################################################
+function fatrat {
+	echo -e "\e[1;31mThis option will install TheFatRat\e[0m"
+	echo -e ""
+	echo -e "Do you want to install it ? (Y/N)"
+			read install
+			if [[ $install = Y || $install = y ]] ; then	
+				echo -e "\033[31m============== Installing TheFatRat ===============\033[m"
+				sleep 2
+				git clone https://github.com/screetsec/thefatrat.git /usr/share/
+				echo ""
+				echo -e "\e[32m[-] Done Installing!\e[0m"
+				echo ""
+				echo -e $red "Your location file in /usr/share/TheFatRat/ "
+			else
+				echo -e "\e[32m[-] Ok,maybe later !\e[0m"
+			fi
+}
+
 ######## MENU BACKDOOR ##########
 function backdoor {
 clear
@@ -1533,7 +1555,7 @@ echo -e $white"=================================================================
 echo -e $okegreen	" 			Let's Install the TOOLS   "
 echo -e $white"======================================================================="
 echo "                                                                "        
-select lalinselc in "Shellter" "Veil Evasion" "Unicorn" "Backdoor-Factory" "Avoid" "GCAT" "Maligno" "mpc" "Back to Main"; do
+select lalinselc in "Shellter" "Veil Evasion" "Unicorn" "Backdoor-Factory" "Avoid" "GCAT" "Maligno" "mpc" "TheFatRat" "Back to Main"; do
 case $lalinselc in
 	"Shellter")
 		ishellter
@@ -1572,6 +1594,11 @@ case $lalinselc in
 
 	"mpc")
 		impc
+		pause
+		backdoor ;;
+
+	"TheFatRat")
+		fatrat
 		pause
 		backdoor ;;
 
