@@ -452,7 +452,7 @@ echo -e $white	" 		Let's Intall  and chocie your fav browser  "
 echo -e $green"======================================================================="
 echo "                                                                "
 echo -e $white""
-select lalinselc in "Install Google Chrome" "Install Chromium" "Install Firefox" "Install Min" "Install TOR-32bit" "Install Tor-64bit"Back to Main"; do
+select lalinselc in "Install Google Chrome" "Install Chromium" "Install Firefox" "Install Min" "Install TOR-32bit" "Install TOR-64bit"Back to Main"; do
 case $lalinselc in
 	"Install Google Chrome")
 		gchrome
