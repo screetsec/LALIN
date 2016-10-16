@@ -378,20 +378,20 @@ function gfox {
 }
 
 #################################################################################
-# Tor Browser
+# Tor Browser-32
 #################################################################################
-function gtor {
+function gtor32 {
 if [ ! -f /root/tor-browser_en-US/Browser/start_tor_browser ]; then
-	echo -e "\e[1;31mThis option will install Tor Browser!\e[0m"
+	echo -e "\e[1;31mThis option will install Tor Browser 32 bit!\e[0m"
 	echo -e ""
 	echo -e "Do you want to install it ? (Y/N)"
 			read install
 			if [[ $install = Y || $install = y ]] ; then	
-				echo -e "\033[31m====== Installing Tor Browser ======\033[m"
+				echo -e "\033[31m====== Installing Tor Browser 32 bit ======\033[m"
 				sleep 2
 				cd /root/Desktop
-				wget https://www.torproject.org/dist/torbrowser/4.5.3/tor-browser-linux32-4.5.3_en-US.tar.xz
-				tar -xf tor-browser-linux32-4.5.3_en-US.tar.xz
+				wget https://www.torproject.org/dist/torbrowser/6.0.5/tor-browser-linux32-6.0.5_en-US.tar.xz
+				tar -xf tor-browser-linux32-6.0.5_en-US.tar.xz
 				cd /root/Desktop/tor-browser_en-US/Browser/
 				mv start-tor-browser start-tor-browser.txt
 				sed -i 's/`id -u`" -eq 0/`id -u`" -eq 1/g' start-tor-browser.txt
@@ -407,6 +407,32 @@ if [ ! -f /root/tor-browser_en-US/Browser/start_tor_browser ]; then
 		echo -e "\e[32m[-] Tor Browser already installed !\e[0m"
 	fi
 }
+function gtor64 {
+if [ ! -f /root/tor-browser_en-US/Browser/start_tor_browser ]; then
+	echo -e "\e[1;31mThis option will install Tor Browser (64 bit!) \e[033m"
+	echo -e ""
+	echo -e "Do you want to install it ? (Y/N)"
+			read install
+			if [[ $install = Y || $install = y ]] ; then	
+				echo -e "\033[31m====== Installing Tor Browser 64bit ======\033[m"
+				sleep 2
+				cd /root/Desktop
+				wget https://www.torproject.org/dist/torbrowser/6.0.5/tor-browser-linux64-6.0.5_en-US.tar.xz
+				tar -xf tor-browser-linux64-6.0.5_en-US.tar.xz
+				cd /root/Desktop/tor-browser_en-US/Browser/
+				mv start-tor-browser start-tor-browser.txt
+				sed -i 's/`id -u`" -eq 0/`id -u`" -eq 1/g' start-tor-browser.txt
+				mv start-tor-browser.txt start-tor-browser
+				cd ..
+				ls -ld
+				chown -R root:root .
+				ls -ld
+			else
+				echo -e "\e[32m[-] Ok,maybe later !\e[0m"
+			fi
+	else
+		echo -e "\e[32m[-] Tor Browser already installed !\e[0m"
+	fi
 
 ######## BROWSERS MENU ##############
 function listbrowser {
@@ -426,7 +452,7 @@ echo -e $white	" 		Let's Intall  and chocie your fav browser  "
 echo -e $green"======================================================================="
 echo "                                                                "
 echo -e $white""
-select lalinselc in "Install Google Chrome" "Install Chromium" "Install Firefox" "Install Min" "Install TOR" "Back to Main"; do
+select lalinselc in "Install Google Chrome" "Install Chromium" "Install Firefox" "Install Min" "Install TOR-32bit" "Install Tor-64bit"Back to Main"; do
 case $lalinselc in
 	"Install Google Chrome")
 		gchrome
@@ -449,11 +475,15 @@ case $lalinselc in
 		pause
 		listbrowser ;;
 	
-	"Install TOR")
-		gtor
+	"Install TOR-32bit")
+		gtor32
 		pause
 		listbrowser ;;
 
+	"Install TOR-64bit")
+		gtor64
+		pause
+		listbrowser;;
 	"Back to Main")
 		clear
 		lalin ;;
