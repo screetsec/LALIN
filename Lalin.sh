@@ -433,7 +433,7 @@ if [ ! -f /root/tor-browser_en-US/Browser/start_tor_browser ]; then
 	else
 		echo -e "\e[32m[-] Tor Browser already installed !\e[0m"
 	fi
-
+}
 ######## BROWSERS MENU ##############
 function listbrowser {
 clear
@@ -452,7 +452,7 @@ echo -e $white	" 		Let's Intall  and chocie your fav browser  "
 echo -e $green"======================================================================="
 echo "                                                                "
 echo -e $white""
-select lalinselc in "Install Google Chrome" "Install Chromium" "Install Firefox" "Install Min" "Install TOR-32bit" "Install TOR-64bit"Back to Main"; do
+select lalinselc in "Install Google Chrome" "Install Chromium" "Install Firefox" "Install Min" "Install TOR-32bit" "Install TOR-64bit" "Back to Main"; do
 case $lalinselc in
 	"Install Google Chrome")
 		gchrome
@@ -483,7 +483,8 @@ case $lalinselc in
 	"Install TOR-64bit")
 		gtor64
 		pause
-		listbrowser;;
+		listbrowser ;;
+
 	"Back to Main")
 		clear
 		lalin ;;
