@@ -595,7 +595,7 @@ function wflux {
 				echo 
 				echo -e "\033[31m================ Finish , now linset in /root/fluxion ========================\033[m"
 				sleep 2
-				sh /root/fluxion/installer.sh
+				sh /root/fluxion/Installer.sh
 			else
 				clear
 				echo -e $white"Okays , Maybe see you next time "
