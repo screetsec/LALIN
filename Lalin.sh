@@ -25,7 +25,7 @@ white='\e[1;37m'
 red='\e[1;31m'
 yellow='\e[1;33m'
 
-
+GIT_CLONE='git clone -q --depth 1'
 
 # pause function
 function pause(){
@@ -514,7 +514,7 @@ function wlinset {
 				echo -e "\033[31m========================== Installing Linset ===============================\033[m"
 				sleep 2
 				rm -rf /root/Linset
-				git clone https://github.com/kernel-64/linset.git /root/Linset/
+				$GIT_CLONE https://github.com/kernel-64/linset.git /root/Linset/
 				echo 
 				echo -e "\033[31m================ Finish , now linset in /root/Linset ========================\033[m"
 			else
@@ -539,7 +539,7 @@ function wbreak {
 				echo -e "\033[31m========================== Installing Wpsbreaker ============================\033[m"
 				sleep 2
 				rm -rf /root/wpsbreak
-				git clone https://github.com/SilentGhostX/HT-WPS-Breaker.git /root/wpsbreak/
+				$GIT_CLONE https://github.com/SilentGhostX/HT-WPS-Breaker.git /root/wpsbreak/
 				echo 
 				echo -e "\033[31m================ Finish , now linset in /root/wpsbreak ========================\033[m"
 			else
@@ -566,7 +566,7 @@ function wphiser {
 				echo -e "\033[31m========================== Installing WifiPhiser ============================\033[m"
 				sleep 2
 				rm -rf /root/wifiphiser
-				git clone https://github.com/Tle7839/wifiphiser.git /root/WifiPhiser/
+				$GIT_CLONE https://github.com/Tle7839/wifiphiser.git /root/WifiPhiser/
 				echo 
 				echo -e "\033[31m================ Finish , now linset in /root/WifiPhiser ======================\033[m"
 			else
@@ -591,7 +591,7 @@ function wflux {
 				echo -e "\033[31m========================== Installing Fluxion ============================\033[m"
 				sleep 2
 				rm -rf /root/wpsbreak
-				git clone https://github.com/deltaxflux/fluxion.git /root/fluxion/
+				$GIT_CLONE https://github.com/deltaxflux/fluxion.git /root/fluxion/
 				echo 
 				echo -e "\033[31m================ Finish , now linset in /root/fluxion ========================\033[m"
 				sleep 2
@@ -618,7 +618,7 @@ function whack {
 				echo -e "\033[31m========================== Installing Wifihacker ============================\033[m"
 				sleep 2
 				rm -rf /root/wifihacker
-				git clone https://github.com/esc0rtd3w/wifi-hacker.git /root/Wifihacker/
+				$GIT_CLONE https://github.com/esc0rtd3w/wifi-hacker.git /root/Wifihacker/
 				echo 
 				echo -e "\033[31m================ Finish , now linset in /root/Wifihacker ======================\033[m"
 			else
@@ -641,7 +641,7 @@ function wwifite {
 				echo -e "\033[31m====================== Installing wifite ==========================\033[m"
 				sleep 2
 				rm -rf /opt/WiFu/wifite/
-				git clone https://github.com/derv82/wifite.git /opt/WiFu/wifite/
+				$GIT_CLONE https://github.com/derv82/wifite.git /opt/WiFu/wifite/
 				echo -e "\033[31m====================== Installing wifite Done ==========================\033[m"
 			else
 				echo -e "\e[32m[-] Ok,maybe later !\e[0m"
@@ -660,7 +660,7 @@ function wtown {
 				echo -e "\033[31m======================== Installing wpa-autopwn ==============================\033[m"
 				sleep 2
 				rm -rf /opt/WiFu/wpa-autopwn/
-				git clone https://github.com/vnik5287/wpa-autopwn.git /opt/WiFu/wpa-autopwn/
+				$GIT_CLONE https://github.com/vnik5287/wpa-autopwn.git /opt/WiFu/wpa-autopwn/
 				echo -e "\033[31m====================== Installing wpa-autopwn Done ==========================\033[m"
 			else
 				echo -e "\e[32m[-] Ok,maybe later !\e[0m"
@@ -675,7 +675,7 @@ function updateexploitdb {
 	clear
 	echo -e "\033[31mThis script will update your Exploitdb\033[m"
 	cd /opt
-	git clone https://github.com/offensive-security/exploit-database.git
+	$GIT_CLONE https://github.com/offensive-security/exploit-database.git
 	cp -TRv exploit-database /usr/share/exploitdb
 	rm -rf exploit-database
 	echo -e "\e[32m[-] Done Updating Exploitdb!\e[0m"	
@@ -875,7 +875,7 @@ function ibettercap {
 				echo -e "\033[31m========================== Installing Bettercap ============================\033[m"
 				sleep 2
 				rm -rf /opt/MITM/bettercap/
-				git clone https://github.com/evilsocket/bettercap /opt/MITM/bettercap/
+				$GIT_CLONE https://github.com/evilsocket/bettercap /opt/MITM/bettercap/
 				sudo apt-get install build-essential ruby-dev libpcap-dev
 				cd /opt/MITM/bettercap/
 				gem build bettercap.gemspec
@@ -904,7 +904,7 @@ if [ ! -f /opt/MITMf-master/mitmf.py ]; then
 				echo -e "\033[31m========================== Installing mitmf ==========================\033[m"
 				sleep 2
 				rm -rf /opt/Sniffing-Spoofing/mitmf/
-				git clone https://github.com/byt3bl33d3r/MITMf.git /opt/Sniffing-Spoofing/mitmf/
+				$GIT_CLONE https://github.com/byt3bl33d3r/MITMf.git /opt/Sniffing-Spoofing/mitmf/
 				cd  /opt/Sniffing-Spoofing/mitmf/
 				./setup.sh
 				apt-get -y install python-dev python-setuptools libpcap0.8-dev libnetfilter-queue-dev
@@ -934,7 +934,7 @@ function iweeman {
 				echo -e "\033[31m========================== Installing Weeman ============================\033[m"
 				sleep 2
 				rm -rf /root/Weeman
-				git clone https://github.com/Hypsurus/weeman.git /root/Weeman/
+				$GIT_CLONE https://github.com/Hypsurus/weeman.git /root/Weeman/
 				echo 
 				echo -e "\033[31m================ Finish , now linset in /root/Weeman ======================\033[m"
 			else
@@ -985,7 +985,7 @@ function iEasy {
 				apt-get -y install screen hostapd dsniff dhcp3-server ipcalc aircrack-ng
 				echo -e "\033[32m====== Done Installing Depends ======\033[m"
 				echo -e "\033[31m====== Installing Easy-Creds ======\033[m"
-				git clone git://github.com/brav0hax/easy-creds.git /opt/easy-creds
+				$GIT_CLONE git://github.com/brav0hax/easy-creds.git /opt/easy-creds
 				ln -s /opt/easy-creds/easy-creds.sh  /usr/bin/easy-creds
 				cd /root/ &>/dev/null
 				echo -e "\033[32m===== All Done ======\033[m"
@@ -1291,7 +1291,7 @@ function pteensy {
 				echo -e "\033[31m========================== Installing Pateensy ============================\033[m"
 				sleep 2
 				rm -rf /root/Pateensy
-				git clone https://github.com/screetsec/Pateensy.git /root/Pateensy/
+				$GIT_CLONE https://github.com/screetsec/Pateensy.git /root/Pateensy/
 				echo 
 				echo -e "\033[31m================ Finish , now Pateensy in /root/Pateensy ======================\033[m"
 			else
@@ -1408,7 +1408,7 @@ if [ ! -f /opt/BypassAV/unicorn-master/unicorn.py ]; then
 			if [[ $install = Y || $install = y ]] ; then	
 				echo -e "\033[31m======================== Installing Unicorn ==================\033[m"
 				sleep 2
-				git clone https://github.com/trustedsec/unicorn.git /opt/BypassAV/unicorn-master
+				$GIT_CLONE https://github.com/trustedsec/unicorn.git /opt/BypassAV/unicorn-master
 			else
 				echo -e "\e[32m[-] Ok,maybe later !\e[0m"
 			fi
@@ -1433,7 +1433,7 @@ if [ ! -f /opt/BypassAV/the-backdoor-factory/backdoor.py ]; then
 			if [[ $install = Y || $install = y ]] ; then	
 				echo -e "\033[31m====== Installing Backdoor Factory ======\033[m"
 				sleep 2
-				git clone https://github.com/secretsquirrel/the-backdoor-factory.git /opt/BypassAV/the-backdoor-factory/
+				$GIT_CLONE https://github.com/secretsquirrel/the-backdoor-factory.git /opt/BypassAV/the-backdoor-factory/
 				cd /opt/BypassAV/the-backdoor-factory/
 				./install.sh
 			else
@@ -1461,7 +1461,7 @@ function iavoid {
 				echo -e "\033[31m================== Installing Avoid ========================\033[m"
 				sleep 2
 				rm -rf /opt/BypassAV/Avoid/
-				git clone https://github.com/nccgroup/metasploitavevasion.git /opt/BypassAV/Avoid/
+				$GIT_CLONE https://github.com/nccgroup/metasploitavevasion.git /opt/BypassAV/Avoid/
 			else
 				echo -e "\e[32m[-] Ok,maybe later !\e[0m"
 			fi
@@ -1483,7 +1483,7 @@ function igcat {
 				echo -e "\033[31m====== Installing gcat ======\033[m"
 				sleep 2
 				rm -rm /opt/Maintaining-Access/OS-Backdoor/gcat-master/
-				git clone https://github.com/byt3bl33d3r/gcat.git /opt/Maintaining-Access/OS-Backdoor/gcat-master/
+				$GIT_CLONE https://github.com/byt3bl33d3r/gcat.git /opt/Maintaining-Access/OS-Backdoor/gcat-master/
 			else
 				echo -e "\e[32m[-] Ok,maybe later !\e[0m"
 			fi
@@ -1534,7 +1534,7 @@ function impc {
 				echo -e "\033[31m====== Installing MPC ======\033[m"
 				sleep 2
 				rm -rf /opt/exploitation/Network/mpc/
-				git clone https://github.com/g0tmi1k/mpc.git /opt/exploitation/Network/mpc/
+				$GIT_CLONE https://github.com/g0tmi1k/mpc.git /opt/exploitation/Network/mpc/
 				echo -e "\e[32m[-] Done Installing!\e[0m"
 			else
 				echo -e "\e[32m[-] Ok,maybe later !\e[0m"
@@ -1553,7 +1553,7 @@ function fatrat {
 			if [[ $install = Y || $install = y ]] ; then	
 				echo -e "\033[31m============== Installing TheFatRat ===============\033[m"
 				sleep 2
-				git clone https://github.com/screetsec/thefatrat.git /usr/share/
+				$GIT_CLONE https://github.com/screetsec/thefatrat.git /usr/share/
 				echo ""
 				echo -e "\e[32m[-] Done Installing!\e[0m"
 				echo ""
@@ -2444,7 +2444,7 @@ function ishellsploit {
 				echo -e "\033[31m========================== Installing Shellsploit ============================\033[m"
 				sleep 2
 				rm -rf /root/exploitdev/shellsploit
-				git clone https://github.com/b3mb4m/shellsploit-framework.git /root/exploitdev/shellsploit/
+				$GIT_CLONE https://github.com/b3mb4m/shellsploit-framework.git /root/exploitdev/shellsploit/
 				echo 
 				echo -e "\033[31m================ Finish , now shellsploit in /root/exploitdev/shellsploit ========================\033[m"
 				sleep 2
@@ -2473,7 +2473,7 @@ function iroutersploit {
 				echo -e "\033[31m========================== Installing Routersploit ============================\033[m"
 				sleep 2
 				rm -rf /root/exploitdev/routersploit
-				git clone https://github.com/reverse-shell/routersploit.git /root/exploitdev/routersploit/
+				$GIT_CLONE https://github.com/reverse-shell/routersploit.git /root/exploitdev/routersploit/
 				echo 
 				echo -e "\033[31m================ Finish , now routersploit in /root/exploitdev/routersploit ========================\033[m"
 				sleep 2
@@ -2500,7 +2500,7 @@ function wes {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/exploitdev/Windows-Exploit-Suggester
-				git clone https://github.com/GDSSecurity/Windows-Exploit-Suggester.git /root/exploitdev/Windows-Exploit-Suggester/
+				$GIT_CLONE https://github.com/GDSSecurity/Windows-Exploit-Suggester.git /root/exploitdev/Windows-Exploit-Suggester/
 				echo 
 				echo -e "\033[31m================ Finish ==========================================\033[m"
 				sleep 2
@@ -2527,7 +2527,7 @@ function les {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/exploitdev/Linux-Exploit-Suggester
-				git clone https://github.com/PenturaLabs/Linux_Exploit_Suggester.git /root/exploitdev/Linux-Exploit-Suggester/
+				$GIT_CLONE https://github.com/PenturaLabs/Linux_Exploit_Suggester.git /root/exploitdev/Linux-Exploit-Suggester/
 				echo 
 				echo -e "\033[31m================ Finish ==========================================\033[m"
 				sleep 2
@@ -2556,7 +2556,7 @@ function litesploit {
 				sleep 2
 				rm -rf /root/exploitdev/Litesploit
 				sudo apt-get install -y gcc make re2c php5-cli php5-dev php5-curl php5-json libpcre3-dev 
-				git clone https://github.com/devilscream/litesploit.git /root/exploitdev/Litesploit/
+				$GIT_CLONE https://github.com/devilscream/litesploit.git /root/exploitdev/Litesploit/
 				echo 
 				echo -e "\033[31m================ Finish , now Litesploit in /root/exploitdev/shellsploit ========================\033[m"
 				sleep 2
@@ -2585,7 +2585,7 @@ function uSploit {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/exploitdev/uSploit
-				git clone https://github.com/4shadoww/usploit.git /root/exploitdev/uSploit/
+				$GIT_CLONE https://github.com/4shadoww/usploit.git /root/exploitdev/uSploit/
 				cd /root/exploitdev/uSploit
 				chmod +x usploit
 				echo 
@@ -2682,7 +2682,7 @@ function ixsspy {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/websecure/XSSPY
-				git clone https://github.com/faizann24/XssPy.git /root/websecure/XSSPY/
+				$GIT_CLONE https://github.com/faizann24/XssPy.git /root/websecure/XSSPY/
 				cd /root/websecure/XSSPY
 				chmod +x XssPy.py
 				echo 
@@ -2712,7 +2712,7 @@ function ixssya {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/websecure/XSSYA
-				git clone https://github.com/yehia-mamdouh/XSSYA.git /root/websecure/XSSYA/
+				$GIT_CLONE https://github.com/yehia-mamdouh/XSSYA.git /root/websecure/XSSYA/
 				cd /root/websecure/XSSYA
 				chmod +x xssya.py
 				echo 
@@ -2741,7 +2741,7 @@ function idoork {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/websecure/DOORK
-				git clone https://github.com/AeonDave/doork.git /root/websecure/DOORK/
+				$GIT_CLONE https://github.com/AeonDave/doork.git /root/websecure/DOORK/
 				cd /root/websecure/DOORK
 				chmod +x doork.py
 				pip install beautifulsoup4
@@ -2772,7 +2772,7 @@ function ivbscan {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/websecure/VBSCAN
-				git clone https://github.com/rezasp/vbscan.git /root/websecure/VBSCAN/
+				$GIT_CLONE https://github.com/rezasp/vbscan.git /root/websecure/VBSCAN/
 				cd /root/websecure/VBSCAN
 				chmod +x vbscan.pl
 				echo 
@@ -2800,7 +2800,7 @@ function iatscan {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/websecure/ATSCAN
-				git clone https://github.com/AlisamTechnology/ATSCAN.git /root/websecure/ATSCAN/
+				$GIT_CLONE https://github.com/AlisamTechnology/ATSCAN.git /root/websecure/ATSCAN/
 				cd /root/websecure/ATSCAN
 				chmod +x atscan.pl
 				chmod +x install.sh
@@ -2832,7 +2832,7 @@ function ivenomscanner {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/websecure/v3n0m-scanner
-				git clone https://github.com/v3n0m-Scanner/V3n0M-Scanner.git /root/websecure/v3n0m-scanner/
+				$GIT_CLONE https://github.com/v3n0m-Scanner/V3n0M-Scanner.git /root/websecure/v3n0m-scanner/
 				cd /root/websecure/v3n0m-scanner
 				chmod +x setup.py	
 				apt-get update
@@ -2868,7 +2868,7 @@ function isniper {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/websecure/Sn1per
-				git clone https://github.com/1N3/Sn1per.git /root/websecure/Sn1per/
+				$GIT_CLONE https://github.com/1N3/Sn1per.git /root/websecure/Sn1per/
 				cd /root/websecure/Sn1per
 				chmod +x install.sh	
 				apt-get update
@@ -2900,7 +2900,7 @@ function idroop {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/websecure/Droopescan
-				git clone https://github.com/droope/droopescan.git /root/websecure/Droopescan/
+				$GIT_CLONE https://github.com/droope/droopescan.git /root/websecure/Droopescan/
 				cd /root/websecure/Droopescan
 				pip install -r requirements.txt
 				echo 		
@@ -2930,7 +2930,7 @@ function inikto {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/websecure/Nikto
-				git clone https://github.com/sullo/nikto.git /root/websecure/Nikto/
+				$GIT_CLONE https://github.com/sullo/nikto.git /root/websecure/Nikto/
 				echo 		
 				echo -e "\033[31m================ Finish ==========================================\033[m"
 				sleep 2
@@ -2957,7 +2957,7 @@ function ilisa {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/websecure/Lisa
-				git clone https://github.com/ant4g0nist/lisa.py.git /root/websecure/Lisa/
+				$GIT_CLONE https://github.com/ant4g0nist/lisa.py.git /root/websecure/Lisa/
 				cd /root/websecure/Lisa
 				chmod +x lisa.py
 				echo 		
@@ -2987,7 +2987,7 @@ function icms {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/websecure/CMSmap
-				git clone https://github.com/Dionach/CMSmap.git /root/websecure/CMSmap/
+				$GIT_CLONE https://github.com/Dionach/CMSmap.git /root/websecure/CMSmap/
 				cd /root/websecure/CMSmap
 				chmod +x cmsmap.py
 				echo 		
@@ -3018,7 +3018,7 @@ function ibingoo {
 				echo -e "\033[31m========================== Installing  ============================\033[m"
 				sleep 2
 				rm -rf /root/websecure/BinGoo
-				git clone https://github.com/Hood3dRob1n/BinGoo.git /root/websecure/BinGoo/
+				$GIT_CLONE https://github.com/Hood3dRob1n/BinGoo.git /root/websecure/BinGoo/
 				cd /root/websecure/BinGoo
 				chmod +x bingoo
 				echo 		
